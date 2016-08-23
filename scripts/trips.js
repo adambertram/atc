@@ -126,7 +126,7 @@ function buildMarkers () {
 
 	$.ajax({
 		method: "POST",
-		url: "http://107.21.43.101:5000/" + apiAction,
+		url: "http://atc.adambertram.net:5000/" + apiAction,
 		data: { startdate: startDate, enddate: endDate },
 		error : function() {
 			alert('There was an error fetching events.  Please try again');
