@@ -1,4 +1,4 @@
-# atc
+# ATC - Top Trips Web App
 <b>Info: </b>
 This map shows the most frequented pick ups for the NYC area from 4/1/2014-9/30/2014.  To interact, simply draw a shape around the markers and you will be presented with information related to these markers, such as total amount of pickups for the area and the top 10 pickup locations.  To remove the shape and reset the map, clicking anywhere will delete your drawn shape and un-hide the markers outside of the area.  You can also switch to the draw tool again and draw another shape.  You can also show/hide a heatmap layer that will show you the correlated data, within your drawn shape or as an overall of the map (if no shape is present).
 
