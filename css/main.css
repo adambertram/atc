@@ -157,16 +157,6 @@ h4 {
 							display: block; } }
 
 
-.content {
-	margin-top: 60px; }
-	@media only screen and (max-width: 600px) {
-		.content {
-			margin-top: 20px; } }
-	.content.login {
-		margin-top: 100px; }
-		.content.login .wrapper {
-			max-width: 600px; }
-
 
 #map {
 		height: 100%;
