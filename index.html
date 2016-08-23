@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ATC</title>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+	</head>
+	<body>
+		<section id="toolbar">
+			<div class="wrapper">
+				<ul class="toolbar">
+					<li><h4>Filters:</h4></li>
+					<li>
+						<select onchange="toggleHeatmap()" id="heatmaptoggle">
+							<option value="on">Heat Map On</option>
+							<option value="off" selected="selected">Heat Map Off</option>
+						</select>
+					</li>
+					 <li>
+						Start Date: <input type="text" id="startdate" class="datepicker" value="2014-04-01" required> | 
+						End Date: <input type="text" id="enddate" class="datepicker" value="2014-05-01" required>
+					</li>
+					<li><input type="button" value="Update Map" onClick="buildMarkers()"></li>
+				</ul>
+			</div>
+		</section>
+		<div id="infoWrapper">
+			<div id="info"></div>
+		</div>
+		<div class="loading" id="loading" style="display:none">Loading&#8230;</div>
+		<div id="map"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+		<script src="scripts/trips.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUl7QJFR8r4inepelYbXOzH2_XSvMhiV0&libraries=geometry,drawing,visualization&callback=initMap"
+		 async defer></script>
+	</body>
+</html>
