@@ -10,7 +10,7 @@ To run, you need to have Python 3.x installed, as well as the Flask API framewor
 <li>flask_cors </li>
 </ul>
 
-Then with flask, navigate to the directory containing the py file and run <code>export FLASK_APP=trips_api.py</code>, followed by <code>flask run --host=0.0.0.0</code> which will make the api available to any outside source.
+Then with flask, navigate to the directory containing the trips_api file and run <code>export FLASK_APP=trips_api.py</code>, followed by <code>flask run --host=0.0.0.0</code> which will make the api available to any outside source.
 
 <b>Approach:</b>
 With the amount of data presented with the data set, I wanted to make an actual useful representation instead of just putting all of the trips on the map.  It was simply too much data to take in and I thought doing a top trips would be a better use of the data.  Once I went with this approach, the map was much less cluttered and could be read easily.  
